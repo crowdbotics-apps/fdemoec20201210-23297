@@ -5,6 +5,7 @@ import customRootSaga from "./custom/sagas"
 import authReducer from './auth/reducers'
 import { combineReducers, createStore, applyMiddleware, compose } from "redux";
 import createSagaMiddleware from "redux-saga";
+import thunk from 'redux-thunk';
 
 const sagaMiddleware = createSagaMiddleware();
 

@@ -158,7 +158,7 @@ class TandCView extends Component {
         flex: 1
       }}>
         <View style={{ height: 60, backgroundColor: "#333333", justifyContent: "space-between", padding: 20, alignItems: "flex-end", flexDirection: 'row' }}>
-          <TouchableOpacity style={{ padding: 5 }} onPress={() => { this.props.navigation.navigate('BlankScreen3177788') }}>
+          <TouchableOpacity style={{ padding: 5 }} onPress={() => { this.props.navigation.navigate('HomeScreen4184048') }}>
             <Icon style={{width: 18, height: 16}} name={'arrow-left'} size={18} color="#fff" />                              
           </TouchableOpacity>
           <Text style={{ color: "#fff", fontSize: 16 }}>TERMS AND CONDITIONS</Text>

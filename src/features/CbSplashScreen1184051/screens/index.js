@@ -19,7 +19,7 @@ import { SlideMenuIcon } from '../../../navigator/slideMenuIcon';
 export default class Blank extends React.Component {
   componentDidMount() {
     setTimeout(() => {
-      this.props.navigation.navigate('BlankScreen1177768') //onboarding
+      this.props.navigation.navigate('OnboardingSlideScreen2184050') //onboarding
     }, 3000);
   }
   static navigationOptions = ({ navigation }) => {

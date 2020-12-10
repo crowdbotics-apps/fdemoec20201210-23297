@@ -38,6 +38,10 @@ files in the github repository. Please note to replace ####### with the numeric 
 
 ```import authReducer from './auth/reducers'```
 
+**ADD** after Line 8/9 ( import createSagaMiddleware from "redux-saga"; )
+
+``` import thunk from 'redux-thunk'; ```
+
 **MODIFY** Line 16 (const middleware) - **ADD** “, thunk” and should look as follows:
 
 ```const middlewares = [sagaMiddleware, thunk /** more middlewares if any goes here */];```

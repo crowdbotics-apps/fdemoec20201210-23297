@@ -34,7 +34,8 @@ const DrawerAppNavigator = createDrawerNavigator(
   },
   {
     contentComponent: SideMenu,
-    initialRouteName: "CbSplashScreen1184051",  // Splash Screen
+  //  initialRouteName: "CbSplashScreen1184051",  // Splash Screen
+    initialRouteName: "HomeScreen4184048",        // Home - Demo  
   },
 );
 

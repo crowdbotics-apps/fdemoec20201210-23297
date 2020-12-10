@@ -61,6 +61,7 @@ THIRD_PARTY_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
     'django_extensions',
     'drf_yasg',
     'storages',
@@ -196,6 +197,15 @@ EMAIL_HOST_USER = env.str("SENDGRID_USERNAME", "")
 EMAIL_HOST_PASSWORD = env.str("SENDGRID_PASSWORD", "")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+
+# Twilio
+
+TWILIO_ACCOUNT_SID = env.str('TWILIO_ACCOUNT_SID', '')
+TWILIO_AUTH_TOKEN = env.str('TWILIO_AUTH_TOKEN', '')
+TWILIO_MESSAGING_SERVICE_ID = env.str('TWILIO_MESSAGING_SERVICE_ID', '')
+# create verification here https://www.twilio.com/console/verify/services
+TWILIO_VERIFICATION_SERVICE_ID = env.str('TWILIO_VERIFICATION_SERVICE_ID', '')
 
 
 # AWS S3 config

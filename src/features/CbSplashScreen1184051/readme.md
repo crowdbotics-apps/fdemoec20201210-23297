@@ -13,11 +13,11 @@ files in the github repository. Please note to replace ####### with the numeric 
   **/src/mainNavigator.js:** 
    **ADD** immediately below in the section labeled  //@BlueprintImportInsertion:  
    
-   ```import CBSplashScreen#######Navigator from '../features/CBSplashScreen#######/navigator';```
+   ```import CbSplashScreen#######Navigator from '../features/CbSplashScreen#######/navigator';```
    
    **ADD**  immediately below in the section inside AppNavigator definition labeled  //@BlueprintNavigationInsertion section:
    
-   ```CBSplashScreen#######: { screen: CBSplashScreen#######Navigator },```
+   ```CbSplashScreen#######: { screen: CbSplashScreen#######Navigator },```
   
    **ADD** comma after __contentComponent: Sidemenu__, and initialRoutName so that your code looks like:
 ```
@@ -27,7 +27,7 @@ const DrawerAppNavigator = createDrawerNavigator(
 	},
 	{
 		contentComponent: SideMenu,
-		initialRouteName: “CBSplashScreen#######”, // Splash Screen
+		initialRouteName: “CbSplashScreen#######”, // Splash Screen
 	},
 );
 ```
@@ -44,7 +44,7 @@ The time set in the screen is set for 3000 ms or 3 seconds. To change this, chan
  **/src/config/installed_blueprints.js:**
     Make sure any screens that aren’t desired in the side menu are removed from the file. This list should only contain the screens desired to be linked on the side menu hamburger. Every screen that you want to show in the sidemenu should be added as follows:
     
-   ``` { name: ‘CBSplashScreen#######’, human_name: 'Splash Screen’, access_route: ‘CBSplashScreen#######`} ```
+   ``` { name: ‘CbSplashScreen#######’, human_name: 'Splash Screen’, access_route: ‘CbSplashScreen#######`} ```
             
    **name:**  doesn't matter much, its used as a unique key for the side menu and splash screens array of 
    buttons, it must be unique, that's the only requirement
